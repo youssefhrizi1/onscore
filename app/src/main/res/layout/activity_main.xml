@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.hrizi.onescore.MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/apptoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="47dp">
+        <!--item 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <!--1-->
+            <LinearLayout
+                android:id="@+id/LLH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/item1"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="firstitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:onClick="tosearchscore"
+                    android:text="Search a Score"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--2    app:layout_constraintTop_toBottomOf="@+id/"-->
+            <LinearLayout
+                android:id="@+id/LLH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/LLH1">
+
+                <ImageView
+                    android:id="@+id/item2"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="sectitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:onClick="toorderscore"
+                    android:text="Order your Score"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--3-->
+            <LinearLayout
+                android:id="@+id/LLH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/LLH2">
+
+                <ImageView
+                    android:id="@+id/item3"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="sectitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Services and Pricing"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--4-->
+            <LinearLayout
+                android:id="@+id/LLH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/LLH3">
+
+                <ImageView
+                    android:id="@+id/item4"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="sectitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/become"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Become a Transcriber"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--5-->
+            <LinearLayout
+                android:id="@+id/LLH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/LLH4">
+
+                <ImageView
+                    android:id="@+id/item5"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="sectitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Help Center"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--6-->
+            <LinearLayout
+                android:id="@+id/LLH6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/LLH5">
+
+                <ImageView
+                    android:id="@+id/item6"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:contentDescription="sectitem"
+                    app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="Contact"
+                    android:textColor="@color/coloronscore"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

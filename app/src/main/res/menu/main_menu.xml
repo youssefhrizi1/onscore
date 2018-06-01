@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    >
+
+    <item
+        android:id="@+id/iccommunity"
+        android:icon="@drawable/ic_chat"
+        android:orderInCategory="100"
+        android:title="Commmunity"
+        app:showAsAction="always"
+
+        />
+    <item
+        android:id="@+id/ichome"
+        android:checkable="true"
+        android:icon="@drawable/ic_account"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/icprofile"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="56dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="256dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:paddingBottom="7dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintVertical_bias="0.118"
+                app:srcCompat="@mipmap/onescore_music" />
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittextbackground"
+                android:ems="10"
+                android:hint="Email"
+                android:textColorHint="@color/inputcolor"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextbackground"
+                android:ems="10"
+                android:hint="Password"
+                android:textColorHint="@color/inputcolor"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp" />
+
+            <Button
+                android:id="@+id/singinbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/coloronscore"
+                android:onClick="loginbtn"
+                android:text="Sing In"
+                android:textColor="@android:color/background_light" />
+
+            <CheckBox
+                android:id="@+id/rememberbtn"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Remember me"
+                android:textColorLink="@color/coloronscore"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/singupbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/coloronscore"
+                android:onClick="registerbtn"
+                android:text="Sing Up"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
